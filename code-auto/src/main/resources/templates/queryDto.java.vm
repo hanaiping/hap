@@ -1,0 +1,25 @@
+package ${package.Entity};
+
+#foreach($pkg in ${table.importPackages})
+import ${pkg};
+#end
+#if(${entityLombokModel})
+import io.swagger.annotations.ApiModel;
+import io.swagger.annotations.ApiModelProperty;
+import lombok.Data;
+import lombok.EqualsAndHashCode;
+import lombok.experimental.Accessors;
+import com.rrk.common.center.modules.base.BaseQuery;
+#end
+/**
+ * @author ${author}
+ * @since ${date}
+ */
+@ApiModel(value = "$!{table.comment}查询条件")
+@Data
+public class ${entity}QueryDto extends  BaseQuery {
+    private static final long serialVersionUID=1L;
+
+
+
+}

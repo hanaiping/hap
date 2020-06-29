@@ -1,0 +1,132 @@
+package $!{package.Controller};
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.*;
+import com.baomidou.mybatisplus.plugins.Page;
+import com.rrk.common.center.tool.util.R;
+import io.swagger.annotations.ApiOperation;
+import io.swagger.annotations.Api;
+import io.swagger.annotations.ApiParam;
+import java.util.Date;
+import java.util.List;
+import java.util.stream.Collectors;
+
+import com.baomidou.mybatisplus.mapper.EntityWrapper;
+import com.rrk.common.center.modules.constant.CommonConstant;
+import com.rrk.common.center.tool.util.Query;
+import org.springframework.beans.factory.annotation.Autowired;
+import com.baomidou.mybatisplus.plugins.Page;
+import com.rrk.common.center.tool.util.R;
+import io.swagger.annotations.Api;
+import java.util.Map;
+
+
+import $!{package.Entity}.$!{entity};
+import $!{package.Service}.$!{entity}Service;
+#if($!{superControllerClassPackage})
+import $!{superControllerClassPackage};
+#end
+/**
+ * <p>
+ * $!{table.comment} 前端控制器
+ * </p>
+ *
+ * @author $!{author}
+ * @since $!{date}
+ */
+@Api(tags = {"$!{table.comment}" })
+@RestController
+@RequestMapping("/$!{table.entityPath}")
+public class $!{table.controllerName}{
+
+    @Autowired
+    private $!{entity}Service $!{table.entityPath}Service;
+
+    /**
+     * 通过ID查询
+     *
+     * @param id ID
+     * @return $!{entity}
+     */
+    @ApiOperation(value = "$!{table.comment}-根据主键获取",response =$!{entity}.class)
+    @GetMapping("/get")
+    public R<$!{entity}> get(@ApiParam @RequestParam   Integer id){
+            return new R<$!{entity}>($!{table.entityPath}Service.selectById(id));
+    }
+
+
+    /**
+    * 分页查询信息
+    *
+    * @param params 分页对象
+    * @return 分页对象
+    */
+    @ApiOperation(value = "$!{table.comment}-查询翻页",response =$!{entity}.class )
+    @PostMapping("/list")
+    public R<Page> list(@RequestParam Map<String, Object> params){
+            params.put(CommonConstant.DEL_FLAG,CommonConstant.STATUS_NORMAL);
+        return new R<Page>($!{table.entityPath}Service.selectPage(new Query<>(params),new EntityWrapper<>()));
+    }
+    /**
+    * 分页查询信息
+    * @param $!{table.entityPath}ReqDto 分页对象
+    * @return 分页对象
+    */
+    /*
+    @ApiOperation(value = "$!{table.comment}查询翻页",response =$!{entity}ReqDto.class )
+    @PostMapping("/list")
+    public R<Page> list($!{entity}ReqDto $!{table.entityPath}ReqDto){
+        return new R<>($!{table.entityPath}Service.findByPage($!{table.entityPath}ReqDto),"操作成功");
+    }
+    */
+
+    /**
+     * 添加
+     * @param  $!{table.entityPath} 实体
+     * @return success/false
+     */
+    @ApiOperation("$!{table.comment}-添加操作")
+    @PostMapping("/add")
+    public R<Boolean> add(@RequestBody $!{entity} $!{table.entityPath}){
+        return new R<>($!{table.entityPath}Service.insert($!{table.entityPath}));
+    }
+
+    /**
+     * 删除
+     * @param id ID
+     * @return success/false
+     */
+    @ApiOperation("删除操作")
+    @PostMapping("/del")
+    public R<Boolean> delete(@ApiParam @RequestParam Integer  id){
+        $!{entity} $!{table.entityPath} =new $!{entity}();
+        $!{table.entityPath}.setId(id);
+        $!{table.entityPath}.setUpdateTime(new Date());
+      //  $!{table.entityPath}.setDelFlag(CommonConstant.STATUS_DEL);
+        return new R<>($!{table.entityPath}Service.updateById($!{table.entityPath}));
+    }
+
+    @ApiOperation("批量删除")
+    @PostMapping("/delByIds")
+    public R<Boolean> delByIds(@ApiParam("批量删除主键集合") @RequestBody List<Long> ids){
+        return new R<>($!{table.entityPath}Service.updateAllColumnBatchById(ids.stream().map(m-> {
+            $!{entity} $!{table.entityPath} =new $!{entity}();
+            $!{table.entityPath}.setId(m);
+            $!{table.entityPath}.setUpdateTime(new Date());
+         //   $!{table.entityPath}.setDelFlag(CommonConstant.STATUS_DEL);
+            return $!{table.entityPath};
+            }
+        ).collect(Collectors.toList())));
+    }
+
+    /**
+     * 编辑
+     * @param  $!{table.entityPath} 实体
+     * @return success/false
+     */
+    @ApiOperation("更新操作")
+    @PostMapping("/update")
+    public R<Boolean> edit(@RequestBody $!{entity} $!{table.entityPath}){
+         $!{table.entityPath}.setUpdateTime(new Date());
+        return new R<>($!{table.entityPath}Service.updateById($!{table.entityPath}));
+    }
+}

@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="521b2de1-9202-4bfd-89f5-dca17b9b79d0" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeInsightWorkspaceSettings">
+    <option name="optimizeImportsOnTheFly" value="true" />
+  </component>
+  <component name="DefaultGradleProjectSettings">
+    <option name="isMigrated" value="true" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Enum" />
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>CustomExceptionEnum</find>
+      <find>R</find>
+      <find>RrkException</find>
+      <find>spring-boot.version</find>
+      <find>springboot.version</find>
+      <find>jackson.modules</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>ExceptionEnum</replace>
+      <replace>Response</replace>
+      <replace>MyException</replace>
+      <replace>spring-boot.version</replace>
+    </replaceStrings>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="localRepository" value="D:\develop\repository" />
+        <option name="mavenHome" value="D:/tools/maven/apache-maven-3.5.4" />
+        <option name="userSettingsFile" value="D:\develop\apache-maven-3.5.2\conf\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="x" value="493" />
+    <option name="y" value="40" />
+    <option name="width" value="1400" />
+    <option name="height" value="1000" />
+  </component>
+  <component name="ProjectId" id="1dznz9MH4aeXlyHoHy6vnM0ZOHk" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="autoscrollToSource" value="true" />
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+    <option name="showMembers" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/util" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.4761602" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\workspace\study1\myBaseProject\user-center\src\main\resources" />
+      <recent name="D:\workspace\study1\myBaseProject\code-auto\src\main\resources" />
+      <recent name="D:\workspace\study1\myBaseProject\common\src\main\java\com\hap\common\constant" />
+      <recent name="D:\workspace\study1\myBaseProject\common\src\main\java\com\hap\common" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.hap.api.center.user.config" />
+      <recent name="com.hap.code" />
+      <recent name="com.hap.common.dto" />
+      <recent name="com.hap.common.util" />
+      <recent name="com.hap.common.constant" />
+    </key>
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.hap.common.exception" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="UserCenterApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="user-center" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.hap.user.center.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.hap.user.center.UserCenterApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Spring Boot.UserCenterApplication" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration>C:\Users\Administrator\AppData\Roaming\Subversion</configuration>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="521b2de1-9202-4bfd-89f5-dca17b9b79d0" name="Default Changelist" comment="" />
+      <created>1593398001703</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1593398001703</updated>
+      <workItem from="1593398005426" duration="2759000" />
+      <workItem from="1593403023166" duration="310000" />
+      <workItem from="1593408931117" duration="563000" />
+      <workItem from="1593411002676" duration="533000" />
+      <workItem from="1593413159982" duration="346000" />
+      <workItem from="1593418008862" duration="9648000" />
+      <workItem from="1593437050305" duration="341000" />
+      <workItem from="1593437617332" duration="1145000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="463" y="120" key="FileChooserDialogImpl" timestamp="1593439511101">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="463" y="120" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1593439511101" />
+    <state x="214" y="0" key="SettingsEditor" timestamp="1593439524166">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="214" y="0" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1593439524166" />
+  </component>
+</project>
